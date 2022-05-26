@@ -1,0 +1,19 @@
+<form action="contact.php" method="post">
+    <div class="test">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="Name" pattern=[A-Z\sa-z]{3,20} required>
+    </div>
+    <div class="test">
+      <label for="email">Your E-mail</label>
+      <input type="email" id="email" name="email" placeholder="test@gmail.com" required>
+    </div>
+    <div class="test">
+      <label for="title">Subject</label>
+      <input type="text" id="title" name="subject" required placeholder="Unable to Reset my Password" pattern=[A-Za-z0-9\s]{8,60}>
+    </div>
+    <div class="test">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Say whatever you want." required></textarea>
+    </div>
+    <button type="submit">Send Message</button>
+  </form>
